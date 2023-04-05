@@ -1,120 +1,126 @@
 <html lang="en">
 
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="./dist/main.css" />
-    <script src="./dist/main.js"></script>
-    <title>WHAC-A-MOLE</title>
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="./dist/main.css" />
+  <script src="./dist/main.js"></script>
+  <title>WHAC-A-MOLE</title>
+</head>
 
-  <body>
-      <nav> 
-            <div>
-              <h2>Difficulty Settings</h2>
-              
-              <button>Easy</button>
-              <button>Medium</button>
-              <button>Hard</button>
-            </div>
-        <h1>*Whac-a-mole*</h1>
-            <div><h2>Game Instructions</h2></div>
-            <button id='startbutton' >Start</button>
-      </nav>
-      <div id="start-cover">
-        <div id="game-container">
-          <div id="lives">Lives:</div>
-            <div class='row' id="tab-row">
-              <div class='key' id="q">q
-                  <div class="mole_holder"></div>
-              </div>
-              <div class='key' id="w">w
-                <div class="mole_holder"></div>
-              </div>
-              <div class='key' id="e">e
-                <div class="mole_holder"></div>
-              </div>
-              <div class='key' id="r">r
-                <div class="mole_holder"></div>
-              </div>
-              <div class='key' id="t">t
-                <div class="mole_holder"></div>
-              </div>
-              <div class='key' id="y">y
-                <div class="mole_holder"></div>
-              </div>
-              <div class='key' id="u">u
-                <div class="mole_holder"></div>
-              </div>
-              <div class='key' id="i">i
-                <div class="mole_holder"></div>
-              </div>
-              <div class='key' id="o">o
-                <div class="mole_holder"></div>
-              </div>
-              <div class='key' id="p">p
-                <div class="mole_holder"></div>
-              </div>
-            </div>
-            <div class='row' id="caps-row">
+<body>
+  <nav>
+    <div id="difficulty">
+      <h2>Difficulty Settings</h2>
 
-              <div class='key' id="a">a
-                <div class="mole_holder"></div>
-              </div>
-              <div class='key' id="s">s
-                <div class="mole_holder"></div>
-              </div>
-              <div class='key' id="d">d
-                <div class="mole_holder"></div>
-              </div>
-              <div class='key' id="f">f
-                <div class="mole_holder"></div>
-              </div>
-              <div class='key' id="g">g
-                <div class="mole_holder"></div>
-              </div>
-              <div class='key' id="h">h
-                <div class="mole_holder"></div>
-              </div>
-              <div class='key' id="j">j
-                <div class="mole_holder"></div>
-              </div>
-              <div class='key' id="k">k
-                <div class="mole_holder"></div>
-              </div>
-              <div class='key' id="l">l
-                <div class="mole_holder"></div>
-              </div>
-
-            </div>
-            <div class='row' id="shift-row">
-
-              <div class='key' id="z">z
-                <div class="mole_holder"></div>
-              </div>
-              <div class='key' id="x">x
-                <div class="mole_holder"></div>
-              </div>
-              <div class='key' id="c">c
-                <div class="mole_holder"></div>
-              </div>
-              <div class='key' id="v">v
-                <div class="mole_holder"></div>
-              </div>
-              <div class='key' id="b">b
-                <div class="mole_holder"></div>
-              </div>
-              <div class='key' id="n">n
-                <div class="mole_holder"></div>
-              </div>
-              <div class='key' id="m">m
-                <div class="mole_holder"></div>
-              </div>
-
-            </div>
-        </div>
+      <button class="difficulty-button" value="easy">Easy</button>
+      <button class="difficulty-button" value="medium">Medium</button>
+      <button class="difficulty-button" value="hard">Hard</button>
+    </div>
+    <h1>*Whac-a-mole*</h1>
+    <div>
+      <h2>Game Instructions</h2>
+    </div>
+  </nav>
+  <div id="start-cover">
+    <p id="start-high-score"></p>
+    <button id='startbutton'>Start</button>
+  </div>
+  <div id="game-over"></div>
+  <div id="game-container">
+    <div id="highestscore"></div>
+    <div id="lives"></div>
+    <div id="score"></div>
+    <div class='row' id="tab-row">
+      <div class='key' id="q">q
+        <div class="mole_holder"></div>
       </div>
-  </body>
+      <div class='key' id="w">w
+        <div class="mole_holder"></div>
+      </div>
+      <div class='key' id="e">e
+        <div class="mole_holder"></div>
+      </div>
+      <div class='key' id="r">r
+        <div class="mole_holder"></div>
+      </div>
+      <div class='key' id="t">t
+        <div class="mole_holder"></div>
+      </div>
+      <div class='key' id="y">y
+        <div class="mole_holder"></div>
+      </div>
+      <div class='key' id="u">u
+        <div class="mole_holder"></div>
+      </div>
+      <div class='key' id="i">i
+        <div class="mole_holder"></div>
+      </div>
+      <div class='key' id="o">o
+        <div class="mole_holder"></div>
+      </div>
+      <div class='key' id="p">p
+        <div class="mole_holder"></div>
+      </div>
+    </div>
+    <div class='row' id="caps-row">
+
+      <div class='key' id="a">a
+        <div class="mole_holder"></div>
+      </div>
+      <div class='key' id="s">s
+        <div class="mole_holder"></div>
+      </div>
+      <div class='key' id="d">d
+        <div class="mole_holder"></div>
+      </div>
+      <div class='key' id="f">f
+        <div class="mole_holder"></div>
+      </div>
+      <div class='key' id="g">g
+        <div class="mole_holder"></div>
+      </div>
+      <div class='key' id="h">h
+        <div class="mole_holder"></div>
+      </div>
+      <div class='key' id="j">j
+        <div class="mole_holder"></div>
+      </div>
+      <div class='key' id="k">k
+        <div class="mole_holder"></div>
+      </div>
+      <div class='key' id="l">l
+        <div class="mole_holder"></div>
+      </div>
+
+    </div>
+    <div class='row' id="shift-row">
+
+      <div class='key' id="z">z
+        <div class="mole_holder"></div>
+      </div>
+      <div class='key' id="x">x
+        <div class="mole_holder"></div>
+      </div>
+      <div class='key' id="c">c
+        <div class="mole_holder"></div>
+      </div>
+      <div class='key' id="v">v
+        <div class="mole_holder"></div>
+      </div>
+      <div class='key' id="b">b
+        <div class="mole_holder"></div>
+      </div>
+      <div class='key' id="n">n
+        <div class="mole_holder"></div>
+      </div>
+      <div class='key' id="m">m
+        <div class="mole_holder"></div>
+      </div>
+
+    </div>
+  </div>
+</body>
 
 </html>

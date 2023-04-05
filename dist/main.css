@@ -8,7 +8,6 @@ nav {
 }
 
 #game-container {
-  z-index: 1;
   width: 76vw;
   height: 70vh;
   display: flex;
@@ -17,6 +16,35 @@ nav {
   align-items: center;
   margin: auto;
   background-image: url("../grassygrass.png");
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+#start-cover {
+  width: 76vw;
+  height: 70vh;
+  z-index: 5;
+  background-color: skyblue;
+  opacity: 75%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#game-over {
+  width: 76vw;
+  height: 70vh;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
 }
 
 #gametextinput {
@@ -58,4 +86,8 @@ nav {
   height: 100px;
   background-repeat: no-repeat;
   background-size: contain;
+}
+
+#lives {
+  font-size: 24px;
 }
