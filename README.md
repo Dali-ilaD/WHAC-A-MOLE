@@ -28,3 +28,4 @@ In terms of technology, this project uses Javascript, HTML, and CSS.
 ## Accredit Assets 
 Image assets were retrieved from: http://pixelartmaker.com/ and https://www.pngwing.com/
 
+## Future Directions
