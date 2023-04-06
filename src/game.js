@@ -9,22 +9,22 @@ class Game {
         this.lives = 5;
         this.score = 0;
         this.highestScore = 0;
-        this.difficulty = 'easy';  
+        this.difficulty = 'easy';
         this.difficultySetting = {
             easy: { removeTimer: 1500, createTimer: 2000 },
             medium: { removeTimer: 1000, createTimer: 1500 },
             hard: { removeTimer: 500, createTimer: 1000 }
         }
     }
-
+    
     setDifficulty() {
         const buttons = document.getElementsByClassName('difficulty-button');
-       
+
         for (let i = 0; i < buttons.length; i++) {
             buttons[i].addEventListener('click', (e) => {
                 this.difficulty = e.target.value;
                 this.selectButton(buttons, i);
-              
+
             })
         }
     }
@@ -59,8 +59,8 @@ class Game {
                 this.lives -= 1
                 document.getElementById('lives').innerHTML = `Lives: ${this.lives} `
             }
-        }, 
-        this.difficultySetting[this.difficulty].removeTimer
+        },
+            this.difficultySetting[this.difficulty].removeTimer
         )
 
 
@@ -104,8 +104,8 @@ class Game {
                 } else {
                     this.generateMole(this.generateRandomLetter())
                 }
-            }, 
-            this.difficultySetting[this.difficulty].createTimer
+            },
+                this.difficultySetting[this.difficulty].createTimer
             )
 
 
@@ -115,10 +115,6 @@ class Game {
             })
         })
     }
-
-
-
-
 }
 
 

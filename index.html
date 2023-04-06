@@ -7,9 +7,11 @@
   <link rel="stylesheet" href="./dist/main.css" />
   <script src="./dist/main.js"></script>
   <title>WHAC-A-MOLE</title>
+  <link rel="icon" href="./pop_up_molepng.png">
 </head>
 
 <body>
+
   <nav>
     <div id="difficulty">
       <h2>Difficulty Settings</h2>
@@ -19,108 +21,123 @@
       <button class="difficulty-button" value="hard">Hard</button>
     </div>
     <h1>*Whac-a-mole*</h1>
-    <div>
+    <div id="instructions">
       <h2>Game Instructions</h2>
+      <br> Press the key labeled above the mole to whacc them!
     </div>
+
   </nav>
-  <div id="start-cover">
-    <p id="start-high-score"></p>
-    <button id='startbutton'>Start</button>
-  </div>
-  <div id="game-over"></div>
-  <div id="game-container">
-    <div id="highestscore"></div>
-    <div id="lives"></div>
-    <div id="score"></div>
-    <div class='row' id="tab-row">
-      <div class='key' id="q">q
-        <div class="mole_holder"></div>
-      </div>
-      <div class='key' id="w">w
-        <div class="mole_holder"></div>
-      </div>
-      <div class='key' id="e">e
-        <div class="mole_holder"></div>
-      </div>
-      <div class='key' id="r">r
-        <div class="mole_holder"></div>
-      </div>
-      <div class='key' id="t">t
-        <div class="mole_holder"></div>
-      </div>
-      <div class='key' id="y">y
-        <div class="mole_holder"></div>
-      </div>
-      <div class='key' id="u">u
-        <div class="mole_holder"></div>
-      </div>
-      <div class='key' id="i">i
-        <div class="mole_holder"></div>
-      </div>
-      <div class='key' id="o">o
-        <div class="mole_holder"></div>
-      </div>
-      <div class='key' id="p">p
-        <div class="mole_holder"></div>
-      </div>
+  <article>
+    <div id="start-cover">
+      <p id="start-high-score"></p>
+      <button id='startbutton'>Start</button>
     </div>
-    <div class='row' id="caps-row">
+    <div id="game-over"></div>
+    <div id="game-container">
+      <div id="highestscore"></div>
+      <div id="lives"></div>
+      <div id="score"></div>
+      <div class='row' id="tab-row">
+        <div class='key' id="q">q
+          <div class="mole_holder"></div>
+        </div>
+        <div class='key' id="w">w
+          <div class="mole_holder"></div>
+        </div>
+        <div class='key' id="e">e
+          <div class="mole_holder"></div>
+        </div>
+        <div class='key' id="r">r
+          <div class="mole_holder"></div>
+        </div>
+        <div class='key' id="t">t
+          <div class="mole_holder"></div>
+        </div>
+        <div class='key' id="y">y
+          <div class="mole_holder"></div>
+        </div>
+        <div class='key' id="u">u
+          <div class="mole_holder"></div>
+        </div>
+        <div class='key' id="i">i
+          <div class="mole_holder"></div>
+        </div>
+        <div class='key' id="o">o
+          <div class="mole_holder"></div>
+        </div>
+        <div class='key' id="p">p
+          <div class="mole_holder"></div>
+        </div>
+      </div>
+      <div class='row' id="caps-row">
 
-      <div class='key' id="a">a
-        <div class="mole_holder"></div>
+        <div class='key' id="a">a
+          <div class="mole_holder"></div>
+        </div>
+        <div class='key' id="s">s
+          <div class="mole_holder"></div>
+        </div>
+        <div class='key' id="d">d
+          <div class="mole_holder"></div>
+        </div>
+        <div class='key' id="f">f
+          <div class="mole_holder"></div>
+        </div>
+        <div class='key' id="g">g
+          <div class="mole_holder"></div>
+        </div>
+        <div class='key' id="h">h
+          <div class="mole_holder"></div>
+        </div>
+        <div class='key' id="j">j
+          <div class="mole_holder"></div>
+        </div>
+        <div class='key' id="k">k
+          <div class="mole_holder"></div>
+        </div>
+        <div class='key' id="l">l
+          <div class="mole_holder"></div>
+        </div>
+
       </div>
-      <div class='key' id="s">s
-        <div class="mole_holder"></div>
-      </div>
-      <div class='key' id="d">d
-        <div class="mole_holder"></div>
-      </div>
-      <div class='key' id="f">f
-        <div class="mole_holder"></div>
-      </div>
-      <div class='key' id="g">g
-        <div class="mole_holder"></div>
-      </div>
-      <div class='key' id="h">h
-        <div class="mole_holder"></div>
-      </div>
-      <div class='key' id="j">j
-        <div class="mole_holder"></div>
-      </div>
-      <div class='key' id="k">k
-        <div class="mole_holder"></div>
-      </div>
-      <div class='key' id="l">l
-        <div class="mole_holder"></div>
+      <div class='row' id="shift-row">
+
+        <div class='key' id="z">z
+          <div class="mole_holder"></div>
+        </div>
+        <div class='key' id="x">x
+          <div class="mole_holder"></div>
+        </div>
+        <div class='key' id="c">c
+          <div class="mole_holder"></div>
+        </div>
+        <div class='key' id="v">v
+          <div class="mole_holder"></div>
+        </div>
+        <div class='key' id="b">b
+          <div class="mole_holder"></div>
+        </div>
+        <div class='key' id="n">n
+          <div class="mole_holder"></div>
+        </div>
+        <div class='key' id="m">m
+          <div class="mole_holder"></div>
+        </div>
+
       </div>
 
     </div>
-    <div class='row' id="shift-row">
+</article>
 
-      <div class='key' id="z">z
-        <div class="mole_holder"></div>
-      </div>
-      <div class='key' id="x">x
-        <div class="mole_holder"></div>
-      </div>
-      <div class='key' id="c">c
-        <div class="mole_holder"></div>
-      </div>
-      <div class='key' id="v">v
-        <div class="mole_holder"></div>
-      </div>
-      <div class='key' id="b">b
-        <div class="mole_holder"></div>
-      </div>
-      <div class='key' id="n">n
-        <div class="mole_holder"></div>
-      </div>
-      <div class='key' id="m">m
-        <div class="mole_holder"></div>
-      </div>
 
+    <div id="outgoinglinks">
+      <a href="https://www.linkedin.com/in/david-lai-506779206/"> <img src="./linkedin-logo-png-1853.png"
+          style="height: 50px; width: 50px;"></a>
+      <a id="githublogo" href="https://github.com/Dali-ilaD"><img src="./githublogo.png"
+          style="height: 50px; width: 50px;"></a>
     </div>
-  </div>
+  
 </body>
+
 
 </html>

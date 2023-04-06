@@ -94,4 +94,21 @@ nav {
 
 body {
   background-image: url(../sky+grass.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+section {
+  clear: both;
+  position: relative;
+}
+
+#instructions {
+  font-size: medium;
+}
+
+#outgoinglinks {
+  position: fixed;
+  bottom: 0;
+  right: 0;
 }
