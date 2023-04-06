@@ -13,7 +13,7 @@ nav {
     justify-content: space-around;
     align-items: center;
     margin: auto;
-    background-image: url('../grassygrass.png');
+    background-image: url('../assets/grassygrass.png');
     position: absolute;
     left: 0;
     right: 0;
@@ -76,11 +76,11 @@ nav {
 
 .pop_up_mole {
 
-    background-image: url('../pop_up_molepng.png');
+    background-image: url('../assets/pop_up_molepng.png');
 }
 
 .whacced_mole {
-    background-image: url('../whacced_mole.png');
+    background-image: url('../assets/whacced_mole.png');
 }
 
 .mole_holder {
@@ -96,7 +96,7 @@ nav {
 }
 
 body {
-    background-image: url(../sky+grass.png);
+    background-image: url(../assets/sky+grass.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
