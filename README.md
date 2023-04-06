@@ -14,7 +14,7 @@ This project is my version of ‘Wack-a-mole’.
 
 ## Functionality 
 
-‘Wack-a-mole’ users will be able to:
+‘Wack-a-mole’ players will be able to:
 * Start the game when they are ready
 * Select a difficulty level
 * Set a high score record

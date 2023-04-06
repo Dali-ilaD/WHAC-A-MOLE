@@ -113,3 +113,16 @@ section {
   bottom: 0;
   right: 0;
 }
+
+#header {
+  font-family: "Trebuchet MS", sans-serif;
+  font-size: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bolder;
+}
+
+h2 {
+  font-family: "Trebuchet MS", sans-serif;
+}
