@@ -15,7 +15,7 @@ nav {
   justify-content: space-around;
   align-items: center;
   margin: auto;
-  background-image: url("WHAC-A-MOLE/assets/grassygrass.png");
+  background-image: url("../assets/grassygrass.png");
   position: absolute;
   left: 0;
   right: 0;
