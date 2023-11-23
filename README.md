@@ -29,3 +29,6 @@ In terms of technology, this project uses Javascript, HTML, and CSS.
 Image assets were retrieved from: http://pixelartmaker.com/ and https://www.pngwing.com/
 
 ## Future Directions
+
+ * Adding animations to game assets
+ * Adding dictionary words to the Hard difficulty through a dictionary API
